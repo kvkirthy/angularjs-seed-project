@@ -1,10 +1,22 @@
-require(['firstController'], function(firstController){
+require.config({
+	paths:{
+		"ui-router": "/bower_components/ui-router/release/angular-ui-router.min",
+		"angular": "/bower_components/angular/angular.min"
+	},
+	shim:{
+		"ui-router":{
+			deps: ["angular"]
+		}
+	}
+});
 
-	var seedMainModule = angular.module("seedMain", [])
+require(['firstController', 'config','ui-router'], function(firstController, config){
+
+	var seedMainModule = angular.module("seedMain", ["ui.router"])
+	.config(config)
 	.controller('firstController', firstController);
 
 	angular.element(document).ready(function(){
-		debugger;
 		angular.bootstrap(document, ['seedMain']);
 		console.log('AngularJS bootstrap complete...');
 	});
