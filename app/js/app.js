@@ -12,11 +12,13 @@ require.config({
 });
 
 // My main module. This is where everything starts
-require(['firstController', 'config','ui-router', "bootstrap"], function(firstController, config){
+require(['firstController', 'techStackController', 'aboutController', 'config','ui-router', "bootstrap"], function(firstController, techStackController, aboutController, config){
 
 	var seedMainModule = angular.module("seedMain", ["ui.router"])
 	.config(config)
-	.controller('firstController', firstController);
+	.controller('firstController', firstController)
+	.controller('techStackController', techStackController)
+	.controller('aboutController', aboutController);
 
 	// Manual bootstrap required in the current model with requirejs
 	angular.element(document).ready(function(){
