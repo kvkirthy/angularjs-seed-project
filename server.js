@@ -7,7 +7,12 @@ app.use(bodyParser.urlencoded({extended:false}));
 
 app.use('/', express.static(path.join(__dirname, '')));
 
-app.listen(3000, function(){
+app.get("/api/techstack", function(req, res){
+	res.setHeader('Content-Type', 'application/json');
+    res.json({temp:"value"});
+});
+
+app.listen(3001, function(){
     console.log(__dirname);
-    console.log('Express server started on port 3000');
+    console.log('Express server started on port 3001');
 });
