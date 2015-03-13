@@ -43,7 +43,10 @@ module.exports = function(grunt) {
             out: "dist/app.js",
             paths:{
             "ui-router":"empty:",
-            "bootstrap":"empty:"
+            "bootstrap":"empty:",
+            "angular-sanitize": "empty:", 
+            "showdown": "empty:", 
+            "markdown": "empty:"
            }
           }
         }

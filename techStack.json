@@ -1,25 +1,36 @@
 [{
 	"technology": "AngularJS",
-	"description": "Superheroic JavaScript Framework"
+	"description": "Superheroic JavaScript Framework",
+	"link": "http://angularjs.org"
 },
 {
 	"technology": "RequireJS",
-	"description": "JavaScript file and module loader"
+	"description": "JavaScript file and module loader",
+	"link":"http://requirejs.org"
 },
 {
 	"technology": "Grunt",
-	"description": "JavaScript Task Runner"
+	"description": "JavaScript Task Runner",
+	"link":"http://gruntjs.com/"
 },
 {
 	"technology": "Bootstrap",
-	"description": "CSS framework for responsive design and mobile first development."
+	"description": "CSS framework for responsive design and mobile first development.",
+	"link":"http://getbootstrap.com"
 },
 {
 	"technology": "NodeJS",
-	"description": "For dummy service"
+	"description": "For dummy service",
+	"link":"http://nodejs.org"
 },
 {
 	"technology": "Package Managers",
-	"description": "NPM for most development tools; Bower for UI scripts."
+	"description": "NPM for most development tools; Bower for UI scripts.",
+	"link":"#"
+},
+{
+	"technology": "Markdown",
+	"description": "Markdown directive, A Brian Ford's module ",
+	"link":"https://github.com/btford/angular-markdown-directive"
 }
 ]
