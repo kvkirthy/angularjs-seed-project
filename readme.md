@@ -3,7 +3,7 @@ A seed project to easily get started with AngularJS. I'm using a specific tech s
 
 #Get Started
 1. Clone the project and navigate to the folder.
-2. Perform npm install for many dev dependencies.
+2. Installation steps below
 ```
 npm install 
 ```
@@ -11,11 +11,11 @@ npm install
 ```
 bower install
 ```
-4. Run grunt default task to get it going.
+Run grunt default task to get it going.
 ```
 grunt
 ```
-5. Now use localhost:3001 to checkout the seed project in a browser.
+**Now use localhost:3001 to checkout the seed project in a browser.**
 
 ### Improvements
 
