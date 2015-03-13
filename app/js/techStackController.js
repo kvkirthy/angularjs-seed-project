@@ -3,7 +3,7 @@ define([], function(){
 		scope.title = "Tech Stack";
 
 		tss.getTechStackItems().then(function(res){
-			console.log(res);
+			scope.items = res;
 		});
 
 	};

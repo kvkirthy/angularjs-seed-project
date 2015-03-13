@@ -1,0 +1,25 @@
+[{
+	"technology": "AngularJS",
+	"description": "Superheroic JavaScript Framework"
+},
+{
+	"technology": "RequireJS",
+	"description": "JavaScript file and module loader"
+},
+{
+	"technology": "Grunt",
+	"description": "JavaScript Task Runner"
+},
+{
+	"technology": "Bootstrap",
+	"description": "CSS framework for responsive design and mobile first development."
+},
+{
+	"technology": "NodeJS",
+	"description": "For dummy service"
+},
+{
+	"technology": "Package Managers",
+	"description": "NPM for most development tools; Bower for UI scripts."
+}
+]
