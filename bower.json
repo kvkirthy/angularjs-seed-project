@@ -3,9 +3,9 @@
   "version": "0.0.0",
   "homepage": "https://github.com/kvkirthy/angularjs-seed-project",
   "authors": [
-    "VenCKi <kvkirthy@gmail.com>"
+    "Keerti <kvkirthy@gmail.com>"
   ],
-  "description": "VenCKi's AngularJS Seed Project",
+  "description": "Keerti's AngularJS Seed Project",
   "license": "MIT",
   "private": true,
   "ignore": [

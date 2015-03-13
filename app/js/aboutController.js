@@ -1,6 +1,6 @@
 define([], function(){
 	var controller = function(scope){
-		scope.title = "VenCKi's Profile";
+		scope.title = "Keerti's Profile";
 
 	};
 
