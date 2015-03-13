@@ -1,6 +1,7 @@
 require.config({
 	paths:{
 		"ui-router": "/bower_components/ui-router/release/angular-ui-router.min",
+		"ngResource": "/bower_components/angular-resource/angular-resource.min",
 		"angular": "/bower_components/angular/angular.min",
 		"bootstrap": "/bower_components/bootstrap/dist/js/bootstrap.min",
 		"angular-sanitize": "/bower_components/angular-sanitize/angular-sanitize.min",
@@ -9,6 +10,9 @@ require.config({
 	},
 	shim:{
 		"ui-router":{
+			deps: ["angular"]
+		},
+		"ngResource":{
 			deps: ["angular"]
 		}
 	}
@@ -19,22 +23,26 @@ define(['firstController',
  'techStackController', 
  'aboutController', 
  'techStackService',
+ 'aboutService',
  'config',
  'templateMain',
  'templates',
  'ui-router', 
+ 'ngResource',
  'bootstrap',
- "markdownModule"], 
+ 'markdownModule'], 
 
- function(firstController, techStackController, aboutController,techStackService, config){
+ function(firstController, techStackController, aboutController,techStackService, aboutFactory , config){
 
 
-	var seedMainModule = angular.module("seedMain", ["ui.router", "templateMain", "markdownModule"])
+	var seedMainModule = angular.module("seedMain", ["ui.router", "templateMain", "markdownModule", "ngResource"])
 	.config(config)
 	.controller('firstController', firstController)
 	.controller('techStackController', techStackController)
 	.controller('aboutController', aboutController)
-	.service('techStackService', techStackService);
+	.service('techStackService', techStackService)
+	.factory('aboutFactory', aboutFactory)
+	;
 
 	// Manual bootstrap required in the current model with requirejs
 	angular.element(document).ready(function(){

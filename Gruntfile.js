@@ -46,7 +46,8 @@ module.exports = function(grunt) {
             "bootstrap":"empty:",
             "angular-sanitize": "empty:", 
             "showdown": "empty:", 
-            "markdown": "empty:"
+            "markdown": "empty:",
+            "ngResource": "empty:"
            }
           }
         }

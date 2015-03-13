@@ -1,3 +1,12 @@
 <div class="row">
 	<div class="col-lg-12 text-center bg-primary"><h1>{{title}}</h1></div>
+	<div> &nbsp; </div>
+	
+	<button class="btn btn-primary" ng-click="getKeertiProfile()">Keerti Profile</button> <button class="btn btn-success" ng-click="getNgHydProfile()">ngHyderabad Profile</button>
+	<div class="row">
+		<div class="col-lg-6" ng-repeat="item in items">
+			<p class="text-primary h4"><a href="{{item.link}}" target="_blank">{{item.technology}}</a></p>
+			<p class="text-muted"> {{item.description}}</p>
+		</div>	
+	</div>
 </div>
