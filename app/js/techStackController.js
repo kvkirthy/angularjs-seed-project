@@ -1,6 +1,6 @@
 define([], function(){
-	var controller = function(scope, tss){
-		scope.title = "Tech Stack";
+	var controller = function(scope, tss, titles){
+		scope.title = titles.techStackTitle;
 
 		tss.getTechStackItems().then(function(res){
 			scope.items = res;
@@ -8,6 +8,6 @@ define([], function(){
 
 	};
 
-	controller.$inject = ["$scope", "techStackService"];
+	controller.$inject = ["$scope", "techStackService", "titles"];
 	return controller;
 });

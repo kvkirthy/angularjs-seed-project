@@ -24,6 +24,7 @@ define(['firstController',
  'aboutController', 
  'techStackService',
  'aboutService',
+ 'titlesValue',
  'config',
  'templateMain',
  'templates',
@@ -32,7 +33,7 @@ define(['firstController',
  'bootstrap',
  'markdownModule'], 
 
- function(firstController, techStackController, aboutController,techStackService, aboutFactory , config){
+ function(firstController, techStackController, aboutController,techStackService, aboutFactory, titlesValue, config){
 
 
 	var seedMainModule = angular.module("seedMain", ["ui.router", "templateMain", "markdownModule", "ngResource"])
@@ -42,7 +43,8 @@ define(['firstController',
 	.controller('aboutController', aboutController)
 	.service('techStackService', techStackService)
 	.factory('aboutFactory', aboutFactory)
-	;
+	.value('titles', titlesValue);
+	
 
 	// Manual bootstrap required in the current model with requirejs
 	angular.element(document).ready(function(){

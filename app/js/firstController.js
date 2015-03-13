@@ -1,9 +1,9 @@
 define([], function(){
-	var controller = function(scope){
-		scope.welcomeMessage = "Welcome, Keerti's AngularJS Seed Project";
+	var controller = function(scope, titles){
+		scope.welcomeMessage = titles.homeTitle;
 	};
 
-	controller.$inject = ['$scope'];
+	controller.$inject = ['$scope', 'titles'];
 
 	return controller;
 });
