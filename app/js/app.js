@@ -25,6 +25,7 @@ define(['firstController',
  'techStackService',
  'aboutService',
  'titlesValue',
+ 'profileDirective',
  'config',
  'templateMain',
  'templates',
@@ -33,12 +34,13 @@ define(['firstController',
  'bootstrap',
  'markdownModule'], 
 
- function(firstController, techStackController, aboutController,techStackService, aboutFactory, titlesValue, config){
+ function(firstController, techStackController, aboutController,techStackService, aboutFactory, titlesValue, profileDirective , config){
 
 
 	var seedMainModule = angular.module("seedMain", ["ui.router", "templateMain", "markdownModule", "ngResource"])
 	.config(config)
 	.controller('firstController', firstController)
+	.directive('profileDirective', profileDirective)
 	.controller('techStackController', techStackController)
 	.controller('aboutController', aboutController)
 	.service('techStackService', techStackService)
